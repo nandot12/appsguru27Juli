@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HargaFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="UMUM"
+                android:textColor="@color/hitam"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/br"
+                android:gravity="fill"
+                android:text="   1.  Iqra' = Rp 35.000"
+                android:textColor="@color/hitam"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="   2.  Al Qur'an = Rp 45.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="   3.  Hafalan Al Qur'an = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="TK"
+                android:textColor="@color/hitam"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="   4.  TK - Membaca, Menulis, Menghitung = Rp 25.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="SD/MI"
+                android:textColor="@color/hitam"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="   5.  SD - Bahasa Arab = Rp 35.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="   6.  SD - Bahasa Inggris = Rp 35.000 "
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="   7.  SD - Tematik = Rp 35.000"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="SMP/MTs"
+                android:textColor="@color/hitam"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="   8.  SMP - Bahasa Arab = Rp 45.000"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   9.  SMP - Bahasa Inggris = Rp 45.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   10.  SMP - Bahasa Indonesia = Rp 45.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   11.  SMP - IPS = Rp 45.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/br2"
+                android:gravity="fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   12. SMP - Matematika = Rp 45.000"
+                android:textColor="@color/hitam"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   13.  SMP -  Fisika = Rp 45.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="  14.  SMP -  Biologi = Rp 45.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="SMA/MA"
+                android:textColor="@color/hitam"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   15.  SMA -  Bahasa Inggris = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   16.  SMA -  Bahasa Arab = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   17.  SMA -  Bahasa Indonesia = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   18.  SMA -  Sejarah = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   19.  SMA - Sosiologi = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   20.  SMA -  Geografi = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   21.  SMA -  Astronomi = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   22.  SMA -  Biologi = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   23.  SMA -  Fisika = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   24.  SMA -  Kimia = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   25.  SMA -  Matematika = Rp 55.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="EXTRA"
+                android:textColor="@color/hitam"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   26.  UMUM -  Belajar Facial = Rp 100.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   27.  UMUM -  Belajar Barber = Rp 100.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   28.  UMUM -  Belajar Menjahit = Rp 100.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br2"
+                android:gravity="fill"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   29.  UMUM -  Belajar Makeup = Rp 100.000"
+                android:textSize="18dp"
+                android:textColor="@color/hitam"
+                android:background="@color/br"
+                android:gravity="fill"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink"
+                    android:gravity="center"
+                    android:text="Mohon isi Semua Form"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/regName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Nama Lengkap"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Email"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regHp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="No HP"
+                    android:inputType="phone"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regJk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Jenis Kelamin"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regConfirmPas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Password Konfirmasi"
+                    android:inputType="textPassword"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/etAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Alamat"
+                    android:maxLines="5"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+                <EditText
+                    android:id="@+id/regKota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Kota / Kabupaten"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Informasi Rekening Bank"
+                    android:textColor="@color/merah"
+                    android:textSize="17sp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center"
+                    android:text="Nama Bank"
+                    android:textColor="@color/hitam" />
+
+                <EditText
+                    android:id="@+id/regNamaBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Mandiri/BCA/BNI/dst"
+
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center"
+                    android:text="Nama Pemilik"
+                    android:textColor="@color/hitam" />
+
+                <EditText
+                    android:id="@+id/regNamaPemilik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="(Harus Sesuai dengan nama di kartu)"
+
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center"
+                    android:text="No. Rekening"
+                    android:textColor="@color/hitam" />
+
+                <EditText
+                    android:id="@+id/regNoRek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint=""
+
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center"
+                    android:text="Silakan Pilih Pelajaran yang Diajar"
+                    android:textColor="@color/pink" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Ketik 'no' jika tidak memilihnya dan 'yes' saat memilihnya"
+                    android:textColor="@color/pink" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center"
+                    android:text="PELAJARAN SEKOLAH"
+                    android:textColor="@color/merah" />
+
+                <Spinner
+                    android:id="@+id/regListJp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"></Spinner>
+
+                <TextView
+                    android:id="@+id/txtSpinner"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Iqra - Umum"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regIqraUmum"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Al-Qur'an - Umum"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regAlQuranUmum"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Hafalan Al-Qur'an - Umum"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regHafalQuranUmum"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Arab - Sd"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regArabSd"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Inggris - Sd"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regInggrisSd"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Tematik - Sd"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regTematikSd"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Arab - Smp"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regArabSmp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Inggris - Smp"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regInggrisSmp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Indonesia - Smp"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regBindoSmp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+
+
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Biologi - Smp"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regBiologiSmp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Fisika - Smp"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regFisikaSmp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Matematika - Smp"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regMatematikaSmp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="IPS - Smp"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regIpsSmp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+<!--/////////////////////////////////////////////////////////////////////-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Inggris - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regInggrisSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Arab - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regArabSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Biologi - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regBiologiSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Kimia - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regKimiaSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Fisika - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+                <!--<EditText-->
+                    <!--android:id="@+id/regFisikaSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Matematika - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regMatematikaSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+
+                <!--//////////////////////////-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Bahasa Indonesia - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regBindoSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Sejarah - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regSejarahSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Geografi - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regGeografiSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+                <!--<TextView-->
+
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Sosiologi - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regSosiologiSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Astronomi - Sma"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regAstronomiSma"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+
+
+                <!--////////////////////////////////////////////////-->
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="EKSTRA"-->
+                    <!--android:textColor="@color/merah" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Belajar Facial - Umum"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regFacialUmum"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Belajar Barber - Umum"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regBarberUmum"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Belajar Menjahit - Umum"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regJahitUmum"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="7dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Belajar Make Up - Umum"-->
+                    <!--android:textColor="@color/hitam" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/regMakeupUmum"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="yes/no"-->
+
+                    <!--android:textColor="@color/hitam"-->
+                    <!--android:textColorHint="@color/abu" />-->
+
+                <!--///////////////////////////////////////////////////////////////-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/cb_fisika"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/putih" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/cb_ipa"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/putih" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/cb_mtk"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/putih" />-->
+
+
+                ///////////////////////////////////////////////////
+
+                <Button
+                    android:id="@+id/regbtnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginPassword"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/pink"
+                    android:text="DAFTAR"
+                    android:textColor="@color/putih" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/linkLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Sudah Punya Akun? MASUK"
+                android:textColor="@color/hitam" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
